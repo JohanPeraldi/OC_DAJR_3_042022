@@ -10,7 +10,7 @@
   padding: $padding calc($padding * 1.25);
   border: none;
   border-radius: 50px;
-  -webkit-box-shadow: 0 8px 14px 0 rgba(0,0,0,0.25);
-  -moz-box-shadow: 0 8px 14px 0 rgba(0,0,0,0.25);
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.25);
+  -webkit-box-shadow: $box-shadow-button;
+  -moz-box-shadow: $box-shadow-button;
+  box-shadow: $box-shadow-button;
 }

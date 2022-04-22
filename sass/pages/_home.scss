@@ -1,0 +1,42 @@
+.homepage-section {
+  font-family: 'Roboto', sans-serif;
+  padding: calc($padding * 1.5) calc($padding * 1.2);
+}
+
+.how-it-works {
+  background-color: white;
+
+  & h2 {
+    margin-bottom: $margin;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    background-color: $color-grey-light;
+    margin-bottom: $margin;
+    padding: calc($padding * 0.7) $padding;
+    border-radius: 25px;
+    box-shadow: $box-shadow-card;
+
+    & span {
+      position: absolute;
+      left: 10px;
+      background-color: $color-primary;
+      color: white;
+      padding: 5px 10px; /* padding & line-height values needed */
+      line-height: 1.2; /* to make a perfect circle */
+      border-radius: 25px;
+      font-size: 13px;
+    }
+
+    & i {
+      padding: 0 $padding;
+      color: $color-primary;
+    }
+
+    & p {
+      font-weight: 500;
+    }
+  }
+}

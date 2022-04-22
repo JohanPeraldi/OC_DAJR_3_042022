@@ -4,6 +4,9 @@ COLORS
 /******
 SPACING
  */
+/**
+BOX-SHADOW
+ */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&family=Shrikhand&display=swap");
 .button {
   font-family: "Roboto", sans-serif;
@@ -72,6 +75,46 @@ SPACING
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   z-index: 10;
   /* To allow box-shadow to cover div below */
+}
+
+.homepage-section {
+  font-family: "Roboto", sans-serif;
+  padding: 30px 24px;
+}
+
+.how-it-works {
+  background-color: white;
+}
+.how-it-works h2 {
+  margin-bottom: 26px;
+}
+.how-it-works__card {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  margin-bottom: 26px;
+  padding: 14px 20px;
+  border-radius: 25px;
+  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.18);
+}
+.how-it-works__card span {
+  position: absolute;
+  left: 10px;
+  background-color: #9356DC;
+  color: white;
+  padding: 5px 10px;
+  /* padding & line-height values needed */
+  line-height: 1.2;
+  /* to make a perfect circle */
+  border-radius: 25px;
+  font-size: 13px;
+}
+.how-it-works__card i {
+  padding: 0 20px;
+  color: #9356DC;
+}
+.how-it-works__card p {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */
