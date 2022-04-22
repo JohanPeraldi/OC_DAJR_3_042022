@@ -1,0 +1,10 @@
+.logo-container {
+  margin: 0;
+  padding-top: calc($padding * 1.25);
+  padding-bottom: calc($padding * 0.7);
+  text-align: center;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+  z-index: 10; /* To allow box-shadow to cover div below */
+}

@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header img {
+  width: 50%;
+  height: 50%;
+}
+
+.location {
+  background-color: $color-grey-medium;
+  padding: $padding;
+  width: 100%;
+  text-align: center;
+}
+
+.location span {
+  font-weight: 500;
+}
+
+.navigation {
+  background-color: $color-grey-light;
+  padding-top: $padding;
+  padding-bottom: calc($padding * 2);
+  text-align: center;
+}
+
+.navigation h1 {
+  font-weight: 500;
+  padding: 0 45px;
+}
+
+.navigation p {
+  font-weight: 100;
+  letter-spacing: 1px;
+}
