@@ -50,7 +50,7 @@
     height: 252px;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: $border-radius-card;
     box-shadow: $box-shadow-card-restaurant;
     margin-bottom: $margin;
   }
@@ -60,6 +60,14 @@
     height: 100%;
     width: 100%;
     position: relative;
+
+    & img {
+      max-height: 180px; /* To stop image from taking too much space */
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: $border-radius-image;
+    }
 
     & span {
       position: absolute;
@@ -76,7 +84,7 @@
     background-color: $color-grey-medium; /* REMOVE WHEN DONE */
     height: 100%;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: $border-radius-image;
   }
 
   &__details {
@@ -85,7 +93,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-radius: 0 0 20px 20px;
+    border-radius: $border-radius-details;
   }
 
   &__description {

@@ -9,7 +9,7 @@
   margin: 20px 0;
   padding: $padding calc($padding * 1.25);
   border: none;
-  border-radius: 50px;
+  border-radius: $border-radius-button;
   -webkit-box-shadow: $box-shadow-button;
   -moz-box-shadow: $box-shadow-button;
   box-shadow: $box-shadow-button;
