@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-footer-background;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 24px;
+
+  & img {
+    width: 33%;
+    height: auto;
+  }
+
+  & ul {
+    list-style: none;
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  & li {
+    margin: 10px 0;
+  }
+
+  & i {
+    width: 20px; /* Important to align text to the left */
+    margin-right: 10px;
+  }
+}

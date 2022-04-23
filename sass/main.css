@@ -11,6 +11,10 @@ BOX-SHADOW
  BORDERS
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -68,6 +72,7 @@ BOX-SHADOW
   letter-spacing: 1px;
 }
 
+/* Only applies to header logo */
 .logo-container {
   margin: 0;
   padding-top: 25px;
@@ -78,6 +83,32 @@ BOX-SHADOW
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   z-index: 10;
   /* To allow box-shadow to cover div below */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 24px;
+}
+.footer img {
+  width: 33%;
+  height: auto;
+}
+.footer ul {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+}
+.footer li {
+  margin: 10px 0;
+}
+.footer i {
+  width: 20px;
+  /* Important to align text to the left */
+  margin-right: 10px;
 }
 
 .homepage-section {
