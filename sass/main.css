@@ -82,6 +82,7 @@ BOX-SHADOW
   padding: 30px 24px;
 }
 
+/* "FONCTIONNEMENT" SECTION */
 .how-it-works {
   background-color: white;
 }
@@ -115,6 +116,60 @@ BOX-SHADOW
 }
 .how-it-works__card p {
   font-weight: 500;
+}
+
+/* "RESTAURANTS" SECTION */
+.restaurants {
+  background-color: #F6F6F6;
+}
+.restaurants__card {
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
+}
+.restaurants__image {
+  flex: 1 1 67%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.restaurants__image span {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  color: green;
+  padding: 8px 12px;
+}
+.restaurants__placeholder-image {
+  background-color: #EAEAEA;
+  /* REMOVE WHEN DONE */
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants__details {
+  flex: 1 1 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+.restaurants__description {
+  padding: 0 14px;
+}
+.restaurants__description h3, .restaurants__description p {
+  margin: 6px 0;
+}
+.restaurants__description p {
+  font-weight: 100;
+}
+.restaurants__like {
+  padding: 0 26px;
 }
 
 /*# sourceMappingURL=main.css.map */

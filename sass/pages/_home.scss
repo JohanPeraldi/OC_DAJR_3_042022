@@ -3,6 +3,7 @@
   padding: calc($padding * 1.5) calc($padding * 1.2);
 }
 
+/* "FONCTIONNEMENT" SECTION */
 .how-it-works {
   background-color: white;
 
@@ -17,7 +18,7 @@
     margin-bottom: $margin;
     padding: calc($padding * 0.7) $padding;
     border-radius: 25px;
-    box-shadow: $box-shadow-card;
+    box-shadow: $box-shadow-how-it-works-item;
 
     & span {
       position: absolute;
@@ -38,5 +39,68 @@
     & p {
       font-weight: 500;
     }
+  }
+}
+
+/* "RESTAURANTS" SECTION */
+.restaurants {
+  background-color: $color-grey-light;
+
+  &__card {
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: $box-shadow-card-restaurant;
+  }
+
+  &__image {
+    flex: 1 1 67%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    & span {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background-color: $color-tertiary;
+      border-radius: 2px;
+      color: green;
+      padding: 8px 12px;
+    }
+  }
+
+  &__placeholder-image {
+    background-color: $color-grey-medium; /* REMOVE WHEN DONE */
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__details {
+    flex: 1 1 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__description {
+    padding: 0 calc($padding * 0.7);
+
+    & h3,
+    & p {
+      margin: 6px 0;
+    }
+
+    & p {
+      font-weight: 100;
+    }
+  }
+
+  &__like {
+    padding: 0 calc($padding * 1.3);
   }
 }
