@@ -128,6 +128,7 @@ BOX-SHADOW
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
+  margin-bottom: 26px;
 }
 .restaurants__image {
   flex: 1 1 67%;
