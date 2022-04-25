@@ -6,8 +6,7 @@
 }
 
 .header img {
-  width: 50%;
-  height: 50%;
+  width: 175px;
 }
 
 .location {
@@ -18,13 +17,14 @@
 }
 
 .location span {
+  margin-left: 14px;
   font-weight: 500;
 }
 
 .navigation {
+  width: 100%;
   background-color: $color-grey-light;
-  padding-top: $padding;
-  padding-bottom: calc($padding * 2);
+  padding: $padding $padding calc($padding * 2);
   text-align: center;
 }
 

@@ -16,6 +16,7 @@ BOX-SHADOW
 }
 
 .button {
+  width: 220px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background: hsl(267deg, 66%, 60%);
@@ -24,7 +25,7 @@ BOX-SHADOW
   background: -webkit-linear-gradient(to top left, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
   color: white;
   margin: 20px 0;
-  padding: 20px 25px;
+  padding: 16px;
   border: none;
   border-radius: 50px;
   -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.25);
@@ -40,8 +41,7 @@ BOX-SHADOW
 }
 
 .header img {
-  width: 50%;
-  height: 50%;
+  width: 175px;
 }
 
 .location {
@@ -52,13 +52,14 @@ BOX-SHADOW
 }
 
 .location span {
+  margin-left: 14px;
   font-weight: 500;
 }
 
 .navigation {
+  width: 100%;
   background-color: #F6F6F6;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 20px 40px;
   text-align: center;
 }
 
@@ -74,6 +75,7 @@ BOX-SHADOW
 
 /* Only applies to header logo */
 .logo-container {
+  width: 100%;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 14px;
@@ -165,14 +167,10 @@ BOX-SHADOW
   margin-bottom: 26px;
 }
 .restaurants__image {
-  flex: 1 1 67%;
-  height: 100%;
-  width: 100%;
+  height: 70%;
   position: relative;
 }
 .restaurants__image img {
-  max-height: 180px;
-  /* To stop image from taking too much space */
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -188,14 +186,14 @@ BOX-SHADOW
   padding: 8px 12px;
 }
 .restaurants__placeholder-image {
-  background-color: #EAEAEA;
   /* REMOVE WHEN DONE */
+  background-color: #EAEAEA;
   height: 100%;
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 .restaurants__details {
-  flex: 1 1 33%;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
