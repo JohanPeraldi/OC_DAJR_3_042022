@@ -19,18 +19,28 @@ BOX-SHADOW
   width: 220px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  background: hsl(267deg, 66%, 60%);
-  background: linear-gradient(to top left, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
-  background: -moz-linear-gradient(to top left, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
-  background: -webkit-linear-gradient(to top left, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
+  background: #9356DC;
+  background: linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
+  background: -moz-linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
+  background: -webkit-linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
   color: white;
   margin: 20px 0;
   padding: 16px;
   border: none;
   border-radius: 50px;
-  -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: all 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
 }
 
 .header {
