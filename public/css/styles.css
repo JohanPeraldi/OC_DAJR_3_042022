@@ -129,6 +129,9 @@ BOX-SHADOW
   display: flex;
   align-items: center;
   background-color: #F6F6F6;
+  margin-left: 14px;
+  /* Needed because numbers overlap the card
+  and must be aligned with h2 subtitle and content below */
   margin-bottom: 26px;
   padding: 14px 20px;
   border-radius: 25px;
@@ -136,7 +139,7 @@ BOX-SHADOW
 }
 .how-it-works__card span {
   position: absolute;
-  left: 10px;
+  left: 24px;
   background-color: #9356DC;
   color: white;
   padding: 5px 10px;
