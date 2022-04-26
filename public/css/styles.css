@@ -87,8 +87,7 @@ html {
   letter-spacing: 1px;
 }
 
-/* Only applies to header logo */
-.logo-container {
+.header .logo-container {
   width: 100%;
   margin: 0;
   padding-top: 25px;
@@ -101,6 +100,19 @@ html {
   /* To allow box-shadow to cover div below */
 }
 
+.footer .logo-container {
+  margin-bottom: 10px;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .footer .logo-container {
+    margin-bottom: 20px;
+  }
+}
 .cards-wrapper {
   display: flex;
   gap: 26px;
@@ -265,16 +277,21 @@ html {
   padding: 24px;
 }
 .footer img {
-  width: 33%;
+  width: 108px;
   height: auto;
 }
 .footer ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 8px;
   list-style: none;
   margin: 8px 0;
   padding: 0;
 }
 .footer li {
-  margin: 10px 0;
+  flex: 1 1 50%;
+  margin: 0;
 }
 .footer i {
   width: 20px;
@@ -282,6 +299,16 @@ html {
   margin-right: 10px;
 }
 
+/*************
+ MEDIA QUERIES
+ */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .footer ul {
+    gap: 0;
+    height: 75px;
+  }
+}
 .homepage-section {
   font-family: "Roboto", sans-serif;
   padding: 30px 24px 70px;

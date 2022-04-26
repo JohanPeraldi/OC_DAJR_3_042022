@@ -1,12 +1,35 @@
-/* Only applies to header logo */
-.logo-container {
-  width: 100%;
-  margin: 0;
-  padding-top: calc($padding * 1.25);
-  padding-bottom: calc($padding * 0.7);
-  text-align: center;
-  -webkit-box-shadow: $box-shadow-container;
-  -moz-box-shadow: $box-shadow-container;
-  box-shadow: $box-shadow-container;
-  z-index: 10; /* To allow box-shadow to cover div below */
+.header {
+
+  & .logo-container {
+    width: 100%;
+    margin: 0;
+    padding-top: calc($padding * 1.25);
+    padding-bottom: calc($padding * 0.7);
+    text-align: center;
+    -webkit-box-shadow: $box-shadow-container;
+    -moz-box-shadow: $box-shadow-container;
+    box-shadow: $box-shadow-container;
+    z-index: 10; /* To allow box-shadow to cover div below */
+  }
+}
+
+.footer {
+
+  & .logo-container {
+    margin-bottom: 10px;
+  }
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .footer {
+
+    & .logo-container {
+      margin-bottom: 20px;
+    }
+  }
 }

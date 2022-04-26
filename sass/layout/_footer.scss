@@ -7,22 +7,42 @@
   padding: 24px;
 
   & img {
-    width: 33%;
+    width: 108px;
     height: auto;
   }
 
   & ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 8px;
     list-style: none;
     margin: 8px 0;
     padding: 0;
   }
 
   & li {
-    margin: 10px 0;
+    flex: 1 1 50%;
+    margin: 0;
   }
 
   & i {
     width: 20px; /* Important to align text to the left */
     margin-right: 10px;
+  }
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .footer {
+
+    & ul {
+      gap: 0;
+      height: 75px;
+    }
   }
 }
