@@ -6,6 +6,8 @@
 /* "FONCTIONNEMENT" SECTION */
 .how-it-works {
   background-color: white;
+  max-width: 1400px;
+  margin: 0 auto;
 
   & h2 {
     margin-bottom: $margin;
@@ -15,4 +17,20 @@
 /* "RESTAURANTS" SECTION */
 .restaurants {
   background-color: $color-grey-light;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .homepage-section {
+    padding-left: calc($padding * 2);
+    padding-right: calc($padding * 2);
+
+    & h2 {
+      font-size: 28px;
+    }
+  }
 }

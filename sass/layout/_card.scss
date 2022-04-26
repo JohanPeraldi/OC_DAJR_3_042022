@@ -182,3 +182,36 @@
     }
   }
 }
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .card {
+
+    /* "FONCTIONNEMENT" SECTION */
+    &--how-it-works {
+
+      & span {
+        font-size: 16px;
+      }
+
+      & p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  /* "RESTAURANTS" SECTION */
+  .restaurant {
+
+    &__description {
+
+      & h3 {
+        font-size: 22px;
+      }
+
+      & p {
+        font-weight: 300;
+      }
+    }
+  }
+}

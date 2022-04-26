@@ -26,3 +26,16 @@
     transition: all 0.3s;
   }
 }
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .button {
+    font-size: large;
+    font-weight: 400;
+    width: 260px;
+  }
+}

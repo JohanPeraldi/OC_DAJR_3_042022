@@ -17,10 +17,13 @@
 <body>
   <header class="header" id="top">
     <div class="logo-container">
-      <img src="./public/images/logo/ohmyfood.png" alt="Logo de OhMyFood">
+      <img src="./public/images/logo/ohmyfood-dark-logo.svg" alt="Logo de OhMyFood">
     </div>
     <div class="location">
-      <i class="fas fa-map-marker-alt"></i>
+      <!-- Phones & tablets icon -->
+      <i class="fas fa-map-marker-alt mobile"></i>
+      <!-- Desktop icon -->
+      <i class="fas fa-map-marker-alt fa-lg desktop"></i>
       <span>Paris, Belleville</span>
     </div>
     <nav class="navigation">
@@ -51,96 +54,100 @@
       </div>
     </section>
     <section class="homepage-section restaurants" id="restaurants">
-      <h2>Restaurants</h2>
-      <div class="cards-wrapper cards-wrapper--restaurants">
+      <div class="container">
+        <h2>Restaurants</h2>
+        <div class="cards-wrapper cards-wrapper--restaurants">
 
-        <!-- FIRST CARD -->
-        <div class="card card--restaurant">
-          <div class="restaurant__image">
-            <!-- <div class="restaurant__placeholder-image"></div>-->
-            <img src="./public/images/restaurants/small/restaurant-la-palette-du-gout-480w.jpg" alt="Restaurant La palette du goût, Ménilmontant">
-            <span>Nouveau</span>
-          </div>
-          <div class="restaurant__details">
-            <div class="restaurant__description">
-              <h3>La palette du goût</h3>
-              <p>Ménilmontant</p>
+          <!-- FIRST CARD -->
+          <div class="card card--restaurant">
+            <div class="restaurant__image">
+              <!-- <div class="restaurant__placeholder-image"></div>-->
+              <img src="./public/images/restaurants/small/restaurant-la-palette-du-gout-480w.jpg" alt="Restaurant La palette du goût, Ménilmontant">
+              <span>Nouveau</span>
             </div>
-            <div class="restaurant__like">
-              <i class="far fa-heart fa-lg"></i>
-              <i class="fas fa-heart fa-lg"></i>
+            <div class="restaurant__details">
+              <div class="restaurant__description">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+              <div class="restaurant__like">
+                <i class="far fa-heart fa-lg"></i>
+                <i class="fas fa-heart fa-lg"></i>
+              </div>
             </div>
           </div>
+
+          <!-- SECOND CARD -->
+          <div class="card card--restaurant">
+            <div class="restaurant__image">
+              <!-- <div class="restaurant__placeholder-image"></div>-->
+              <img src="./public/images/restaurants/small/restaurant-la-note-enchantee-480w.jpg" alt="Restaurant La note enchantée, Charonne">
+              <span>Nouveau</span>
+            </div>
+            <div class="restaurant__details">
+              <div class="restaurant__description">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <div class="restaurant__like">
+                <i class="far fa-heart fa-lg"></i>
+                <i class="fas fa-heart fa-lg"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- THIRD CARD -->
+          <div class="card card--restaurant">
+            <div class="restaurant__image">
+              <!-- <div class="restaurant__placeholder-image"></div>-->
+              <img src="./public/images/restaurants/small/restaurant-a-la-francaise-480w.jpg" alt="Restaurant À la française, Cité Rouge">
+            </div>
+            <div class="restaurant__details">
+              <div class="restaurant__description">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="restaurant__like">
+                <i class="far fa-heart fa-lg"></i>
+                <i class="fas fa-heart fa-lg"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOURTH CARD -->
+          <div class="card card--restaurant">
+            <div class="restaurant__image">
+              <!-- <div class="restaurant__placeholder-image"></div>-->
+              <img src="./public/images/restaurants/small/restaurant-le-delice-des-sens-480w.jpg" alt="Restaurant Le délice des sens, Folie-Méricourt">
+            </div>
+            <div class="restaurant__details">
+              <div class="restaurant__description">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="restaurant__like">
+                <i class="far fa-heart fa-lg"></i>
+                <i class="fas fa-heart fa-lg"></i>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-        <!-- SECOND CARD -->
-        <div class="card card--restaurant">
-          <div class="restaurant__image">
-            <!-- <div class="restaurant__placeholder-image"></div>-->
-            <img src="./public/images/restaurants/small/restaurant-la-note-enchantee-480w.jpg" alt="Restaurant La note enchantée, Charonne">
-            <span>Nouveau</span>
-          </div>
-          <div class="restaurant__details">
-            <div class="restaurant__description">
-              <h3>La note enchantée</h3>
-              <p>Charonne</p>
-            </div>
-            <div class="restaurant__like">
-              <i class="far fa-heart fa-lg"></i>
-              <i class="fas fa-heart fa-lg"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- THIRD CARD -->
-        <div class="card card--restaurant">
-          <div class="restaurant__image">
-            <!-- <div class="restaurant__placeholder-image"></div>-->
-            <img src="./public/images/restaurants/small/restaurant-a-la-francaise-480w.jpg" alt="Restaurant À la française, Cité Rouge">
-          </div>
-          <div class="restaurant__details">
-            <div class="restaurant__description">
-              <h3>À la française</h3>
-              <p>Cité Rouge</p>
-            </div>
-            <div class="restaurant__like">
-              <i class="far fa-heart fa-lg"></i>
-              <i class="fas fa-heart fa-lg"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- FOURTH CARD -->
-        <div class="card card--restaurant">
-          <div class="restaurant__image">
-            <!-- <div class="restaurant__placeholder-image"></div>-->
-            <img src="./public/images/restaurants/small/restaurant-le-delice-des-sens-480w.jpg" alt="Restaurant Le délice des sens, Folie-Méricourt">
-          </div>
-          <div class="restaurant__details">
-            <div class="restaurant__description">
-              <h3>Le délice des sens</h3>
-              <p>Folie-Méricourt</p>
-            </div>
-            <div class="restaurant__like">
-              <i class="far fa-heart fa-lg"></i>
-              <i class="fas fa-heart fa-lg"></i>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="logo-container">
-      <img src="./public/images/logo/ohmyfood@2x.svg" alt="Logo de OhMyFood">
+    <div class="container">
+      <div class="logo-container">
+        <img src="public/images/logo/ohmyfood-light-logo.svg" alt="Logo de OhMyFood">
+      </div>
+      <ul>
+        <li><a href="#top"><i class="fas fa-utensils"></i><span>Proposer un restaurant</span></a></li>
+        <li><a href="#top"><i class="fas fa-hands-helping fa-sm"></i><span>Devenir partenaire</span></a></li>
+        <li><a href="#top">Mentions légales</a></li>
+        <li><a href="mailto:imhungry@ohmyfood.com">Contact</a></li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="#top"><i class="fas fa-utensils"></i><span>Proposer un restaurant</span></a></li>
-      <li><a href="#top"><i class="fas fa-hands-helping fa-sm"></i><span>Devenir partenaire</span></a></li>
-      <li><a href="#top">Mentions légales</a></li>
-      <li><a href="mailto:imhungry@ohmyfood.com">Contact</a></li>
-    </ul>
   </footer>
 </body>
 </html>

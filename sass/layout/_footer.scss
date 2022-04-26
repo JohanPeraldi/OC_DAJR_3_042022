@@ -1,10 +1,13 @@
 .footer {
-  display: flex;
-  flex-direction: column;
   background-color: $color-footer-background;
   color: white;
   font-family: "Roboto", sans-serif;
   padding: 24px;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+  }
 
   & img {
     width: 108px;
@@ -54,6 +57,27 @@
     & ul {
       gap: 0;
       height: 75px;
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: calc($padding * 2);
+
+    & img {
+      width: 20%;
+    }
+
+    & ul {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      height: auto;
+    }
+
+    & li {
+      flex: initial;
     }
   }
 }

@@ -55,13 +55,23 @@ a:link, a:visited {
   transition: all 0.3s;
 }
 
+/*************
+ MEDIA QUERIES
+ */
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .button {
+    font-size: large;
+    font-weight: 400;
+    width: 260px;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
 }
-
 .header img {
   width: 175px;
 }
@@ -72,7 +82,9 @@ a:link, a:visited {
   width: 100%;
   text-align: center;
 }
-
+.location .desktop {
+  display: none;
+}
 .location span {
   margin-left: 14px;
   font-weight: 500;
@@ -84,17 +96,42 @@ a:link, a:visited {
   padding: 20px 20px 40px;
   text-align: center;
 }
-
 .navigation h1 {
   font-weight: 500;
   padding: 0 45px;
 }
-
 .navigation p {
   font-weight: 100;
   letter-spacing: 1px;
 }
 
+/*************
+ MEDIA QUERIES
+ */
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .header img {
+    width: 30%;
+  }
+
+  .location .mobile {
+    display: none;
+  }
+  .location .desktop {
+    display: initial;
+  }
+  .location span {
+    font-size: large;
+  }
+
+  .navigation h1 {
+    font-size: xx-large;
+  }
+  .navigation p {
+    font-size: large;
+    font-weight: 400;
+  }
+}
 .header .logo-container {
   width: 100%;
   margin: 0;
@@ -106,6 +143,11 @@ a:link, a:visited {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   z-index: 10;
   /* To allow box-shadow to cover div below */
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 .footer .logo-container {
@@ -276,13 +318,35 @@ a:link, a:visited {
     flex: 1 1 48%;
   }
 }
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .card {
+    /* "FONCTIONNEMENT" SECTION */
+  }
+  .card--how-it-works span {
+    font-size: 16px;
+  }
+  .card--how-it-works p {
+    font-size: 18px;
+  }
+
+  /* "RESTAURANTS" SECTION */
+  .restaurant__description h3 {
+    font-size: 22px;
+  }
+  .restaurant__description p {
+    font-weight: 300;
+  }
+}
 .footer {
-  display: flex;
-  flex-direction: column;
   background-color: #353535;
   color: white;
   font-family: "Roboto", sans-serif;
   padding: 24px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
 }
 .footer img {
   width: 108px;
@@ -326,6 +390,23 @@ a:link, a:visited {
     height: 75px;
   }
 }
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 40px;
+  }
+  .footer img {
+    width: 20%;
+  }
+  .footer ul {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: auto;
+  }
+  .footer li {
+    flex: initial;
+  }
+}
 .homepage-section {
   font-family: "Roboto", sans-serif;
   padding: 30px 24px 70px;
@@ -334,6 +415,8 @@ a:link, a:visited {
 /* "FONCTIONNEMENT" SECTION */
 .how-it-works {
   background-color: white;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .how-it-works h2 {
   margin-bottom: 26px;
@@ -342,6 +425,20 @@ a:link, a:visited {
 /* "RESTAURANTS" SECTION */
 .restaurants {
   background-color: #F6F6F6;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .homepage-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .homepage-section h2 {
+    font-size: 28px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
