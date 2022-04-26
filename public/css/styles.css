@@ -15,6 +15,10 @@ BOX-SHADOW
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   width: 220px;
   font-family: "Roboto", sans-serif;
