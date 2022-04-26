@@ -26,6 +26,17 @@
     margin: 0;
   }
 
+  & a {
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid $color-secondary;
+      color: $color-secondary;
+      transition: all 0.3s;
+    }
+  }
+
   & i {
     width: 20px; /* Important to align text to the left */
     margin-right: 10px;

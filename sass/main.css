@@ -22,16 +22,9 @@ html {
 a {
   text-decoration: none;
   color: white;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s;
 }
 a:link, a:visited {
   color: inherit;
-}
-a:hover {
-  border-bottom: 1px solid #FF79DA;
-  color: #FF79DA;
-  transition: all 0.3s;
 }
 
 .button {
@@ -307,6 +300,15 @@ a:hover {
 .footer li {
   flex: 1 1 50%;
   margin: 0;
+}
+.footer a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.footer a:hover {
+  border-bottom: 1px solid #FF79DA;
+  color: #FF79DA;
+  transition: all 0.3s;
 }
 .footer i {
   width: 20px;
