@@ -108,6 +108,13 @@ html {
   gap: 26px;
 }
 
+/* Only applies to How it works section */
+.restaurants__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
 /*************
  MEDIA QUERIES
  */
@@ -201,11 +208,9 @@ html {
   height: 252px;
   display: flex;
   flex-direction: column;
+  flex: 1 1 100%;
   border-radius: 20px;
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
-}
-.restaurants__card:not(:last-of-type) {
-  margin-bottom: 26px;
 }
 .restaurants__image {
   height: 70%;
@@ -287,6 +292,11 @@ html {
   }
   .how-it-works__card p {
     flex: 1 1 70%;
+  }
+
+  /* "RESTAURANTS" SECTION */
+  .restaurants__card {
+    flex: 1 1 48%;
   }
 }
 

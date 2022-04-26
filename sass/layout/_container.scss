@@ -18,6 +18,13 @@
   gap: $gap;
 }
 
+/* Only applies to How it works section */
+.restaurants__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
 /*************
  MEDIA QUERIES
  */
