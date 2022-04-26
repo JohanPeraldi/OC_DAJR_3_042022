@@ -101,6 +101,24 @@ html {
   /* To allow box-shadow to cover div below */
 }
 
+/* Only applies to How it works section */
+.how-it-works__cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .how-it-works__cards-wrapper {
+    flex-direction: initial;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -129,7 +147,7 @@ html {
 
 .homepage-section {
   font-family: "Roboto", sans-serif;
-  padding: 30px 24px;
+  padding: 30px 24px 70px;
 }
 
 /* "FONCTIONNEMENT" SECTION */
@@ -141,19 +159,22 @@ html {
 }
 .how-it-works__card {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex: 1 1 30%;
   background-color: #F6F6F6;
   margin-left: 14px;
   /* Needed because numbers overlap the card
   and must be aligned with h2 subtitle and content below */
-  margin-bottom: 26px;
   padding: 14px 20px;
   border-radius: 25px;
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.18);
+  position: relative;
+  /* Needed to position span elements with numbers */
 }
 .how-it-works__card span {
   position: absolute;
-  left: 24px;
+  left: -14px;
   background-color: #9356DC;
   color: white;
   padding: 5px 10px;
@@ -164,10 +185,11 @@ html {
   font-size: 13px;
 }
 .how-it-works__card i {
-  padding: 0 20px;
+  flex: 1 1 25%;
   color: #9356DC;
 }
 .how-it-works__card p {
+  flex: 1 1 75%;
   font-weight: 500;
 }
 
@@ -181,6 +203,8 @@ html {
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
+}
+.restaurants__card:not(:last-of-type) {
   margin-bottom: 26px;
 }
 .restaurants__image {
@@ -250,6 +274,20 @@ html {
   /* Should fill in with linear-gradient */
   opacity: 1;
   transition: opacity 0.6s;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  /* "FONCTIONNEMENT" SECTION */
+  .how-it-works__card i {
+    flex: 1 1 30%;
+  }
+  .how-it-works__card p {
+    flex: 1 1 70%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

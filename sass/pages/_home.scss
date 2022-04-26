@@ -1,6 +1,6 @@
 .homepage-section {
   font-family: 'Roboto', sans-serif;
-  padding: calc($padding * 1.5) calc($padding * 1.2);
+  padding: calc($padding * 1.5) calc($padding * 1.2) calc($padding * 3.5);
 }
 
 /* "FONCTIONNEMENT" SECTION */
@@ -13,18 +13,20 @@
 
   &__card {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex: 1 1 30%;
     background-color: $color-grey-light;
     margin-left: 14px; /* Needed because numbers overlap the card
     and must be aligned with h2 subtitle and content below */
-    margin-bottom: $margin;
     padding: calc($padding * 0.7) $padding;
     border-radius: 25px;
     box-shadow: $box-shadow-how-it-works-item;
+    position: relative; /* Needed to position span elements with numbers */
 
     & span {
       position: absolute;
-      left: 24px;
+      left: -14px;
       background-color: $color-primary;
       color: white;
       padding: 5px 10px; /* padding & line-height values needed */
@@ -34,11 +36,12 @@
     }
 
     & i {
-      padding: 0 $padding;
+      flex: 1 1 25%;
       color: $color-primary;
     }
 
     & p {
+      flex: 1 1 75%;
       font-weight: 500;
     }
   }
@@ -54,6 +57,9 @@
     flex-direction: column;
     border-radius: $border-radius-card;
     box-shadow: $box-shadow-card-restaurant;
+  }
+
+  &__card:not(:last-of-type) {
     margin-bottom: $margin;
   }
 
@@ -135,6 +141,28 @@
         /* Should fill in with linear-gradient */
         opacity: 1;
         transition: opacity 0.6s;
+      }
+    }
+  }
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  /* "FONCTIONNEMENT" SECTION */
+  .how-it-works {
+
+    &__card {
+
+      & i {
+        flex: 1 1 30%;
+      }
+
+      & p {
+        flex: 1 1 70%;
       }
     }
   }
