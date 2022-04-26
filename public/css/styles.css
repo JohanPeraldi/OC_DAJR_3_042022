@@ -101,18 +101,134 @@ html {
   /* To allow box-shadow to cover div below */
 }
 
-/* Only applies to How it works section */
-.how-it-works__cards-wrapper {
+.cards-wrapper {
   display: flex;
-  flex-direction: column;
   gap: 26px;
+  /* "FONCTIONNEMENT" SECTION */
+  /* "RESTAURANTS" SECTION */
+}
+.cards-wrapper--how-it-works {
+  flex-direction: column;
+}
+.cards-wrapper--restaurants {
+  flex-wrap: wrap;
 }
 
-/* Only applies to How it works section */
-.restaurants__cards-wrapper {
+.card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 26px;
+  /* "FONCTIONNEMENT" SECTION */
+  /* "RESTAURANTS" SECTION */
+}
+.card--how-it-works {
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 30%;
+  background-color: #F6F6F6;
+  margin-left: 14px;
+  /* Needed because numbers overlap the card
+  and must be aligned with h2 subtitle and content below */
+  padding: 14px 20px;
+  border-radius: 25px;
+  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.18);
+  position: relative;
+  /* Needed to position span elements with numbers */
+}
+.card--how-it-works span {
+  position: absolute;
+  left: -14px;
+  background-color: #9356DC;
+  color: white;
+  padding: 5px 10px;
+  /* padding & line-height values needed */
+  line-height: 1.2;
+  /* to make a perfect circle */
+  border-radius: 25px;
+  font-size: 13px;
+}
+.card--how-it-works i {
+  flex: 1 1 25%;
+  color: #9356DC;
+}
+.card--how-it-works p {
+  flex: 1 1 75%;
+  font-weight: 500;
+}
+.card--restaurant {
+  height: 252px;
+  flex-direction: column;
+  flex: 1 1 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
+}
+
+/* "RESTAURANTS" SECTION */
+.restaurant__image {
+  height: 70%;
+  position: relative;
+}
+.restaurant__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.restaurant__image span {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  color: green;
+  padding: 8px 12px;
+}
+.restaurant__placeholder-image {
+  /* REMOVE WHEN DONE */
+  background-color: #EAEAEA;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.restaurant__details {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+.restaurant__description {
+  padding: 0 14px;
+}
+.restaurant__description h3, .restaurant__description p {
+  margin: 6px 0;
+}
+.restaurant__description p {
+  font-weight: 100;
+}
+.restaurant__like {
+  padding: 0 26px;
+}
+.restaurant__like > i.far.fa-heart {
+  position: relative;
+  left: 25px;
+  transition: opacity 0.6s;
+}
+.restaurant__like > i.fas.fa-heart {
+  color: #9356DC;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.restaurant__like:hover {
+  cursor: pointer;
+}
+.restaurant__like:hover > i.far.fa-heart {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.restaurant__like:hover > i.fas.fa-heart {
+  /* Should fill in with linear-gradient */
+  opacity: 1;
+  transition: opacity 0.6s;
 }
 
 /*************
@@ -120,10 +236,24 @@ html {
  */
 /* TABLETS */
 @media screen and (min-width: 768px) {
-  .how-it-works__cards-wrapper {
+  .cards-wrapper--how-it-works {
     flex-direction: initial;
     justify-content: space-between;
     gap: 20px;
+  }
+
+  .card {
+    /* "FONCTIONNEMENT" SECTION */
+    /* "RESTAURANTS" SECTION */
+  }
+  .card--how-it-works i {
+    flex: 1 1 30%;
+  }
+  .card--how-it-works p {
+    flex: 1 1 70%;
+  }
+  .card--restaurant {
+    flex: 1 1 48%;
   }
 }
 .footer {
@@ -164,140 +294,10 @@ html {
 .how-it-works h2 {
   margin-bottom: 26px;
 }
-.how-it-works__card {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1 1 30%;
-  background-color: #F6F6F6;
-  margin-left: 14px;
-  /* Needed because numbers overlap the card
-  and must be aligned with h2 subtitle and content below */
-  padding: 14px 20px;
-  border-radius: 25px;
-  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.18);
-  position: relative;
-  /* Needed to position span elements with numbers */
-}
-.how-it-works__card span {
-  position: absolute;
-  left: -14px;
-  background-color: #9356DC;
-  color: white;
-  padding: 5px 10px;
-  /* padding & line-height values needed */
-  line-height: 1.2;
-  /* to make a perfect circle */
-  border-radius: 25px;
-  font-size: 13px;
-}
-.how-it-works__card i {
-  flex: 1 1 25%;
-  color: #9356DC;
-}
-.how-it-works__card p {
-  flex: 1 1 75%;
-  font-weight: 500;
-}
 
 /* "RESTAURANTS" SECTION */
 .restaurants {
   background-color: #F6F6F6;
-}
-.restaurants__card {
-  height: 252px;
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-  border-radius: 20px;
-  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
-}
-.restaurants__image {
-  height: 70%;
-  position: relative;
-}
-.restaurants__image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-.restaurants__image span {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background-color: #99E2D0;
-  border-radius: 2px;
-  color: green;
-  padding: 8px 12px;
-}
-.restaurants__placeholder-image {
-  /* REMOVE WHEN DONE */
-  background-color: #EAEAEA;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-}
-.restaurants__details {
-  height: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-radius: 0 0 20px 20px;
-}
-.restaurants__description {
-  padding: 0 14px;
-}
-.restaurants__description h3, .restaurants__description p {
-  margin: 6px 0;
-}
-.restaurants__description p {
-  font-weight: 100;
-}
-.restaurants__like {
-  padding: 0 26px;
-}
-.restaurants__like > i.far.fa-heart {
-  position: relative;
-  left: 25px;
-  transition: opacity 0.6s;
-}
-.restaurants__like > i.fas.fa-heart {
-  color: #9356DC;
-  opacity: 0;
-  transition: opacity 0.6s;
-}
-.restaurants__like:hover {
-  cursor: pointer;
-}
-.restaurants__like:hover > i.far.fa-heart {
-  opacity: 0;
-  transition: opacity 0.6s;
-}
-.restaurants__like:hover > i.fas.fa-heart {
-  /* Should fill in with linear-gradient */
-  opacity: 1;
-  transition: opacity 0.6s;
-}
-
-/*************
- MEDIA QUERIES
- */
-/* TABLETS */
-@media screen and (min-width: 768px) {
-  /* "FONCTIONNEMENT" SECTION */
-  .how-it-works__card i {
-    flex: 1 1 30%;
-  }
-  .how-it-works__card p {
-    flex: 1 1 70%;
-  }
-
-  /* "RESTAURANTS" SECTION */
-  .restaurants__card {
-    flex: 1 1 48%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

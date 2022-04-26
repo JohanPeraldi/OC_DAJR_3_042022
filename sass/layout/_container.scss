@@ -10,30 +10,3 @@
   box-shadow: $box-shadow-container;
   z-index: 10; /* To allow box-shadow to cover div below */
 }
-
-/* Only applies to How it works section */
-.how-it-works__cards-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: $gap;
-}
-
-/* Only applies to How it works section */
-.restaurants__cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $gap;
-}
-
-/*************
- MEDIA QUERIES
- */
-
-/* TABLETS */
-@media screen and (min-width: 768px) {
-  .how-it-works__cards-wrapper {
-    flex-direction: initial;
-    justify-content: space-between;
-    gap: 20px;
-  }
-}
