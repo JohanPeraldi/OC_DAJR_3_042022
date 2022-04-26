@@ -225,5 +225,27 @@ BOX-SHADOW
 .restaurants__like {
   padding: 0 26px;
 }
+.restaurants__like > i.far.fa-heart {
+  position: relative;
+  left: 25px;
+  transition: opacity 0.6s;
+}
+.restaurants__like > i.fas.fa-heart {
+  color: #9356DC;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.restaurants__like:hover {
+  cursor: pointer;
+}
+.restaurants__like:hover > i.far.fa-heart {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.restaurants__like:hover > i.fas.fa-heart {
+  /* Should fill in with linear-gradient */
+  opacity: 1;
+  transition: opacity 0.6s;
+}
 
 /*# sourceMappingURL=main.css.map */

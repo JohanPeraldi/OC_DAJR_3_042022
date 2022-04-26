@@ -110,5 +110,32 @@
 
   &__like {
     padding: 0 calc($padding * 1.3);
+
+    & > i.far.fa-heart {
+      position: relative;
+      left: 25px;
+      transition: opacity 0.6s;
+    }
+
+    & > i.fas.fa-heart {
+      color: $color-primary;
+      opacity: 0;
+      transition: opacity 0.6s;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      & > i.far.fa-heart {
+        opacity: 0;
+        transition: opacity 0.6s;
+      }
+
+      & > i.fas.fa-heart {
+        /* Should fill in with linear-gradient */
+        opacity: 1;
+        transition: opacity 0.6s;
+      }
+    }
   }
 }
