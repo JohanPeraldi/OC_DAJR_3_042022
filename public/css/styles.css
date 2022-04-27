@@ -27,7 +27,7 @@ a:link, a:visited {
   color: inherit;
 }
 
-.button {
+.link {
   width: 220px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -46,7 +46,7 @@ a:link, a:visited {
   opacity: 1;
   transition: all 0.3s;
 }
-.button:hover {
+.link:hover {
   cursor: pointer;
   opacity: 0.9;
   -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.3);
@@ -60,7 +60,7 @@ a:link, a:visited {
  */
 /* DESKTOP */
 @media screen and (min-width: 992px) {
-  .button {
+  .link {
     font-size: large;
     font-weight: 400;
     width: 260px;
@@ -91,6 +91,9 @@ a:link, a:visited {
 }
 
 .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: #F6F6F6;
   padding: 20px 20px 40px;
@@ -101,7 +104,7 @@ a:link, a:visited {
   padding: 0 45px;
 }
 .navigation p {
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -265,7 +268,7 @@ a:link, a:visited {
   margin: 6px 0;
 }
 .restaurant__description p {
-  font-weight: 100;
+  font-weight: 300;
 }
 .restaurant__like {
   padding: 0 26px;
@@ -335,7 +338,7 @@ a:link, a:visited {
     font-size: 22px;
   }
   .restaurant__description p {
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 .footer {
