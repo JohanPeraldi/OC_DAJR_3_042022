@@ -164,6 +164,23 @@ a:link, a:visited {
   margin-bottom: 10px;
 }
 
+/* MENU PAGES */
+.top-bar-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.top-bar-wrapper > i {
+  position: absolute;
+  top: 40%;
+  left: 24px;
+}
+.top-bar-wrapper .logo-container {
+  flex: 1 0 100%;
+  box-shadow: initial;
+  z-index: initial;
+}
+
 /*************
  MEDIA QUERIES
  */

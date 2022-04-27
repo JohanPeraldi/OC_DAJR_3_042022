@@ -2,10 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   & img {
     width: 175px;
+  }
+
+  /* MENU PAGES */
+  & .image-wrapper {
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
   }
 }
 

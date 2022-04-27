@@ -18,9 +18,27 @@
 }
 
 .footer {
-
   & .logo-container {
     margin-bottom: 10px;
+  }
+}
+
+/* MENU PAGES */
+.top-bar-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  & > i {
+    position: absolute;
+    top: 40%;
+    left: 24px;
+  }
+
+  & .logo-container {
+    flex: 1 0 100%;
+    box-shadow: initial;
+    z-index: initial;
   }
 }
 
