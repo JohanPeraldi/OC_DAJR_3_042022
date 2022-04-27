@@ -31,10 +31,10 @@ a:link, a:visited {
   width: 220px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  background: #9356DC;
-  background: linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
-  background: -moz-linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
-  background: -webkit-linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
+  background: #9356dc;
+  background: linear-gradient(to top left, #9356dc 0%, #ff79da 100%);
+  background: -moz-linear-gradient(to top left, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(to top left, #9356dc 0%, #ff79da 100%);
   color: white;
   margin: 20px 0;
   padding: 16px;
@@ -71,13 +71,20 @@ a:link, a:visited {
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  /* MENU PAGES */
 }
 .header img {
   width: 175px;
 }
+.header .image-wrapper {
+  width: 100%;
+}
+.header .image-wrapper img {
+  width: 100%;
+}
 
 .location {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 20px;
   width: 100%;
   text-align: center;
@@ -95,7 +102,7 @@ a:link, a:visited {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 20px 20px 40px;
   text-align: center;
 }
@@ -188,10 +195,10 @@ a:link, a:visited {
   justify-content: space-around;
   align-items: center;
   flex: 1 1 30%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin-left: 14px;
   /* Needed because numbers overlap the card
-  and must be aligned with h2 subtitle and content below */
+     and must be aligned with h2 subtitle and content below */
   padding: 14px 20px;
   border-radius: 25px;
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.18);
@@ -201,7 +208,7 @@ a:link, a:visited {
 .card--how-it-works span {
   position: absolute;
   left: -14px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   padding: 5px 10px;
   /* padding & line-height values needed */
@@ -212,7 +219,7 @@ a:link, a:visited {
 }
 .card--how-it-works i {
   flex: 1 1 25%;
-  color: #9356DC;
+  color: #9356dc;
 }
 .card--how-it-works p {
   flex: 1 1 75%;
@@ -241,14 +248,14 @@ a:link, a:visited {
   position: absolute;
   top: 14px;
   right: 14px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 2px;
   color: green;
   padding: 8px 12px;
 }
 .restaurant__placeholder-image {
   /* REMOVE WHEN DONE */
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 100%;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -279,7 +286,7 @@ a:link, a:visited {
   transition: opacity 0.6s;
 }
 .restaurant__like > i.fas.fa-heart {
-  color: #9356DC;
+  color: #9356dc;
   opacity: 0;
   transition: opacity 0.6s;
 }
@@ -373,8 +380,8 @@ a:link, a:visited {
   transition: all 0.3s;
 }
 .footer a:hover {
-  border-bottom: 1px solid #FF79DA;
-  color: #FF79DA;
+  border-bottom: 1px solid #ff79da;
+  color: #ff79da;
   transition: all 0.3s;
 }
 .footer i {
@@ -427,7 +434,7 @@ a:link, a:visited {
 
 /* "RESTAURANTS" SECTION */
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 /*************

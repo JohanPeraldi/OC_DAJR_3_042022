@@ -22,8 +22,9 @@
     align-items: center;
     flex: 1 1 30%;
     background-color: $color-grey-light;
-    margin-left: 14px; /* Needed because numbers overlap the card
-    and must be aligned with h2 subtitle and content below */
+    margin-left: 14px;
+    /* Needed because numbers overlap the card
+       and must be aligned with h2 subtitle and content below */
     padding: calc($padding * 0.7) $padding;
     border-radius: 25px;
     box-shadow: $box-shadow-how-it-works-item;
@@ -63,7 +64,6 @@
 
 /* "RESTAURANTS" SECTION */
 .restaurant {
-
   &__image {
     height: 70%;
     position: relative;
@@ -86,7 +86,8 @@
     }
   }
 
-  &__placeholder-image { /* REMOVE WHEN DONE */
+  &__placeholder-image {
+    /* REMOVE WHEN DONE */
     background-color: $color-grey-medium;
     height: 100%;
     width: 100%;
@@ -154,7 +155,6 @@
 /* TABLETS */
 @media screen and (min-width: 768px) {
   .cards-wrapper {
-
     &--how-it-works {
       flex-direction: initial;
       justify-content: space-between;
@@ -163,10 +163,8 @@
   }
 
   .card {
-
     /* "FONCTIONNEMENT" SECTION */
     &--how-it-works {
-
       & i {
         flex: 1 1 30%;
       }
@@ -186,10 +184,8 @@
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .card {
-
     /* "FONCTIONNEMENT" SECTION */
     &--how-it-works {
-
       & span {
         font-size: 16px;
       }
@@ -202,9 +198,7 @@
 
   /* "RESTAURANTS" SECTION */
   .restaurant {
-
     &__description {
-
       & h3 {
         font-size: 22px;
       }
