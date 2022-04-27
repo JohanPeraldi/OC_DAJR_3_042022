@@ -1,0 +1,20 @@
+.menu {
+  background-color: $color-grey-light;
+  padding: $padding-section;
+
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__like {
+    @include heart-hover-animation;
+    padding-right: 13px;
+  }
+}

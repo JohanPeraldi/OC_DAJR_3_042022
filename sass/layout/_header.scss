@@ -11,6 +11,8 @@
   /* MENU PAGES */
   & .image-wrapper {
     width: 100%;
+    height: 250px; /* To avoid gap between image and next section.
+    Remove once menu section is pushed over the image. */
 
     & img {
       width: 100%;
