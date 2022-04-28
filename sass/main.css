@@ -567,6 +567,16 @@ a:link, a:visited {
   /* border-radius must be greater than that of children
        to avoid background showing behind them */
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
+  overflow-x: hidden;
+}
+.menu__course-card:hover {
+  cursor: pointer;
+}
+.menu__course-card:hover .menu__course-selection {
+  transform: translateX(0);
+}
+.menu__course-card:hover .menu__course-selection i {
+  transform: rotate(0);
 }
 .menu__course-card-wrapper {
   display: flex;
@@ -606,9 +616,13 @@ a:link, a:visited {
   width: 18%;
   background-color: #99e2d0;
   border-radius: 0 20px 20px 0;
+  transform: translateX(130px);
+  transition: all 0.5s;
 }
 .menu__course-selection i {
   color: white;
+  transform: rotate(-360deg);
+  transition: all 0.5s;
 }
 .menu .link {
   margin: 50px auto 0;

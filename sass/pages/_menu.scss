@@ -66,6 +66,19 @@
       /* border-radius must be greater than that of children
            to avoid background showing behind them */
       box-shadow: $box-shadow-card-restaurant;
+      overflow-x: hidden;
+
+      &:hover {
+        cursor: pointer;
+
+        & .menu__course-selection {
+          transform: translateX(0);
+
+          & i {
+            transform: rotate(0);
+          }
+        }
+      }
 
       &-wrapper {
         display: flex;
@@ -109,9 +122,13 @@
       width: calc(100% - $details-width);
       background-color: $color-tertiary;
       border-radius: 0 20px 20px 0;
+      transform: translateX(130px);
+      transition: all 0.5s;
 
       & i {
         color: white;
+        transform: rotate(-360deg);
+        transition: all 0.5s;
       }
     }
   }
