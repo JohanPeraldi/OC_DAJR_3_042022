@@ -29,10 +29,20 @@
   width: 100%;
   position: relative;
 
-  & > i {
+  & .back-home {
     position: absolute;
     top: 40%;
     left: 24px;
+
+    & a {
+      color: black;
+      transition: color 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+      }
+    }
   }
 
   & .logo-container {

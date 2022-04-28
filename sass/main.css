@@ -174,10 +174,18 @@ a:link, a:visited {
   width: 100%;
   position: relative;
 }
-.top-bar-wrapper > i {
+.top-bar-wrapper .back-home {
   position: absolute;
   top: 40%;
   left: 24px;
+}
+.top-bar-wrapper .back-home a {
+  color: black;
+  transition: color 0.3s;
+}
+.top-bar-wrapper .back-home a:hover {
+  cursor: pointer;
+  color: #9356dc;
 }
 .top-bar-wrapper .logo-container {
   flex: 1 0 100%;
