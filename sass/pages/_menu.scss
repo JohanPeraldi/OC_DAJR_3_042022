@@ -24,6 +24,8 @@
   }
 
   &__course {
+    display: flex;
+    flex-direction: column;
     position: relative;
 
     &-title-wrapper {
@@ -37,6 +39,61 @@
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 6px;
+      }
+    }
+
+    &-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      height: $menu-card-height;
+      border-radius: 22px;
+      /* border-radius must be greater than that of children
+           to avoid background showing behind them */
+      box-shadow: $box-shadow-card-restaurant;
+      margin-top: 60px; /* Remove after adding second card */
+
+      /* Check that this works after adding second card */
+      &:first-of-type {
+        margin-top: 60px;
+      }
+    }
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: $details-width;
+      justify-content: space-around;
+      padding: 10px;
+      border-radius: 20px 0 0 20px;
+      background-color: white;
+    }
+
+    &-title {
+      & h3 {
+        margin: 6px 0;
+      }
+    }
+
+    &-description {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-selection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      width: calc(100% - $details-width);
+      background-color: $color-tertiary;
+      border-radius: 0 20px 20px 0;
+
+      & i {
+        color: white;
       }
     }
   }
