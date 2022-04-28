@@ -34,6 +34,7 @@ a:link, a:visited {
   width: 220px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  text-align: center;
   background: #9356dc;
   background: linear-gradient(to top left, #9356dc 0%, #ff79da 100%);
   background: -moz-linear-gradient(to top left, #9356dc 0%, #ff79da 100%);
@@ -586,6 +587,9 @@ a:link, a:visited {
 }
 .menu__course-selection i {
   color: white;
+}
+.menu .link {
+  margin: 50px auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
