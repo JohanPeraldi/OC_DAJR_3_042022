@@ -282,13 +282,6 @@ a:link, a:visited {
   color: green;
   padding: 8px 12px;
 }
-.restaurant__placeholder-image {
-  /* REMOVE WHEN DONE */
-  background-color: #eaeaea;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-}
 .restaurant__details {
   height: 30%;
   display: flex;

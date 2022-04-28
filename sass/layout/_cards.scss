@@ -86,14 +86,6 @@
     }
   }
 
-  &__placeholder-image {
-    /* REMOVE WHEN DONE */
-    background-color: $color-grey-medium;
-    height: 100%;
-    width: 100%;
-    border-radius: $border-radius-image;
-  }
-
   &__details {
     height: 30%;
     display: flex;
