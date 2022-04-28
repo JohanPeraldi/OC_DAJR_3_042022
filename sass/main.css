@@ -518,6 +518,9 @@ a:link, a:visited {
   display: flex;
   flex-direction: column;
 }
+.menu__course:not(:first-of-type) {
+  margin-top: 30px;
+}
 .menu__course-title-border {
   position: relative;
 }
@@ -566,6 +569,10 @@ a:link, a:visited {
 .menu__course-description {
   display: flex;
   justify-content: space-between;
+}
+.menu__course-description span:first-of-type {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__course-selection {
   display: flex;

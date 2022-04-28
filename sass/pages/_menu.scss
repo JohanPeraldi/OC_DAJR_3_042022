@@ -27,6 +27,10 @@
     display: flex;
     flex-direction: column;
 
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+
     &-title {
       &-border {
         position: relative;
@@ -84,6 +88,11 @@
     &-description {
       display: flex;
       justify-content: space-between;
+
+      & span:first-of-type {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
 
     &-selection {
