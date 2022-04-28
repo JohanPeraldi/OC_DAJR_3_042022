@@ -71,11 +71,17 @@
       &:hover {
         cursor: pointer;
 
-        & .menu__course-selection {
-          transform: translateX(0);
+        & .menu__course {
+          &-selection {
+            transform: translateX(0);
 
-          & i {
-            transform: rotate(0);
+            & i {
+              transform: rotate(0);
+            }
+          }
+
+          &-description {
+            width: 100%;
           }
         }
       }
@@ -102,6 +108,8 @@
     &-description {
       display: flex;
       justify-content: space-between;
+      width: 120%;
+      transition: width 0.5s;
 
       & span:first-of-type {
         @include text-ellipsis;

@@ -578,6 +578,9 @@ a:link, a:visited {
 .menu__course-card:hover .menu__course-selection i {
   transform: rotate(0);
 }
+.menu__course-card:hover .menu__course-description {
+  width: 100%;
+}
 .menu__course-card-wrapper {
   display: flex;
   flex-direction: column;
@@ -597,6 +600,8 @@ a:link, a:visited {
 .menu__course-description {
   display: flex;
   justify-content: space-between;
+  width: 120%;
+  transition: width 0.5s;
 }
 .menu__course-description span:first-of-type {
   white-space: nowrap;
