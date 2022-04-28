@@ -52,6 +52,7 @@
 
       & h3 {
         margin: 6px 0;
+        @include text-ellipsis;
       }
     }
 
@@ -90,8 +91,12 @@
       justify-content: space-between;
 
       & span:first-of-type {
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        @include text-ellipsis;
+      }
+
+      & span:last-of-type {
+        padding: 0 10px;
+        font-weight: 700;
       }
     }
 

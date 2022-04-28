@@ -547,6 +547,9 @@ a:link, a:visited {
 }
 .menu__course-title h3 {
   margin: 6px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__course-card {
   display: flex;
@@ -582,6 +585,11 @@ a:link, a:visited {
 .menu__course-description span:first-of-type {
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__course-description span:last-of-type {
+  padding: 0 10px;
+  font-weight: 700;
 }
 .menu__course-selection {
   display: flex;
