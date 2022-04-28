@@ -7,6 +7,11 @@ $color-tertiary: #99e2d0;
 $color-grey-medium: #eaeaea;
 $color-grey-light: #f6f6f6;
 $color-footer-background: #353535;
+$color-primary-secondary-gradient: linear-gradient(
+  to top left,
+  $color-primary 0%,
+  $color-secondary 100%
+);
 
 /******
 SPACING

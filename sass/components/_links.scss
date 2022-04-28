@@ -4,11 +4,7 @@
   font-weight: 300;
   text-align: center;
   background: $color-primary;
-  background: linear-gradient(
-    to top left,
-    $color-primary 0%,
-    $color-secondary 100%
-  );
+  background: $color-primary-secondary-gradient;
   background: -moz-linear-gradient(
     to top left,
     $color-primary 0%,
