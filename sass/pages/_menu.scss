@@ -26,19 +26,28 @@
   &__course {
     display: flex;
     flex-direction: column;
-    position: relative;
 
-    &-title-wrapper {
-      border-bottom: 3px solid $color-tertiary;
-      position: absolute;
-      left: 0;
-      right: 85%;
+    &-title {
+      &-border {
+        position: relative;
+      }
 
-      & > h2 {
-        font-size: 20px;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 6px;
+      &-wrapper {
+        border-bottom: 3px solid $color-tertiary;
+        position: absolute;
+        left: 0;
+        right: 85%;
+
+        & > h2 {
+          font-size: 20px;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-bottom: 6px;
+        }
+      }
+
+      & h3 {
+        margin: 6px 0;
       }
     }
 
@@ -52,10 +61,11 @@
       /* border-radius must be greater than that of children
            to avoid background showing behind them */
       box-shadow: $box-shadow-card-restaurant;
-      margin-top: 60px; /* Remove after adding second card */
 
-      /* Check that this works after adding second card */
-      &:first-of-type {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         margin-top: 60px;
       }
     }
@@ -69,12 +79,6 @@
       padding: 10px;
       border-radius: 20px 0 0 20px;
       background-color: white;
-    }
-
-    &-title {
-      & h3 {
-        margin: 6px 0;
-      }
     }
 
     &-description {
