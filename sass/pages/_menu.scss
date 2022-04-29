@@ -66,6 +66,23 @@
            to avoid background showing behind them */
       box-shadow: $box-shadow-card-restaurant;
       overflow-x: hidden;
+      animation: slide-in linear;
+
+      &:first-of-type {
+        animation-duration: 1s;
+      }
+
+      &:nth-of-type(2) {
+        animation-duration: 1.25s;
+      }
+
+      &:nth-of-type(3) {
+        animation-duration: 1.5s;
+      }
+
+      &:nth-of-type(4) {
+        animation-duration: 1.75s;
+      }
 
       &:hover {
         cursor: pointer;

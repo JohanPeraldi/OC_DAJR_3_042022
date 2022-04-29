@@ -289,6 +289,19 @@ a:link, a:visited {
     margin-bottom: 20px;
   }
 }
+/***************
+ CARDS ANIMATION
+ */
+@keyframes slide-in {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .cards-wrapper {
   display: flex;
   gap: 26px;
@@ -650,6 +663,19 @@ a:link, a:visited {
        to avoid background showing behind them */
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.18);
   overflow-x: hidden;
+  animation: slide-in linear;
+}
+.menu__course-card:first-of-type {
+  animation-duration: 1s;
+}
+.menu__course-card:nth-of-type(2) {
+  animation-duration: 1.25s;
+}
+.menu__course-card:nth-of-type(3) {
+  animation-duration: 1.5s;
+}
+.menu__course-card:nth-of-type(4) {
+  animation-duration: 1.75s;
 }
 .menu__course-card:hover {
   cursor: pointer;
