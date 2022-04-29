@@ -9,7 +9,7 @@
 
   &__title {
     font-family: "Shrikhand", cursive;
-    font-size: 28px;
+    font-size: 26px;
 
     &-wrapper {
       display: flex;
@@ -40,28 +40,27 @@
         border-bottom: 3px solid $color-tertiary;
         position: absolute;
         left: 0;
-        right: 85%;
+        right: 87%;
 
         & > h2 {
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 300;
           text-transform: uppercase;
-          margin-bottom: 6px;
+          margin-bottom: 5px;
         }
       }
 
       & h3 {
         margin: 6px 0;
-        @include text-ellipsis;
+        font-size: 17px;
       }
     }
 
     &-card {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       background-color: white;
-      height: $menu-card-height;
+      height: fit-content;
       border-radius: 22px;
       /* border-radius must be greater than that of children
            to avoid background showing behind them */
@@ -111,13 +110,16 @@
       width: 120%;
       transition: width 0.5s;
 
-      & span:first-of-type {
-        @include text-ellipsis;
-      }
+      & span {
+        font-size: 14px;
+        &:first-of-type {
+          @include text-ellipsis;
+        }
 
-      & span:last-of-type {
-        padding: 0 10px;
-        font-weight: 700;
+        &:last-of-type {
+          padding: 0 10px;
+          font-weight: 700;
+        }
       }
     }
 
@@ -126,7 +128,6 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 100%;
       width: calc(100% - $details-width);
       background-color: $color-tertiary;
       border-radius: 0 20px 20px 0;

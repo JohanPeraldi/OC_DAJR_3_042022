@@ -491,7 +491,7 @@ a:link, a:visited {
 }
 .menu__title {
   font-family: "Shrikhand", cursive;
-  font-size: 28px;
+  font-size: 26px;
 }
 .menu__title-wrapper {
   display: flex;
@@ -543,26 +543,23 @@ a:link, a:visited {
   border-bottom: 3px solid #99e2d0;
   position: absolute;
   left: 0;
-  right: 85%;
+  right: 87%;
 }
 .menu__course-title-wrapper > h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .menu__course-title h3 {
   margin: 6px 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  font-size: 17px;
 }
 .menu__course-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: white;
-  height: 70px;
+  height: fit-content;
   border-radius: 22px;
   /* border-radius must be greater than that of children
        to avoid background showing behind them */
@@ -603,6 +600,9 @@ a:link, a:visited {
   width: 120%;
   transition: width 0.5s;
 }
+.menu__course-description span {
+  font-size: 14px;
+}
 .menu__course-description span:first-of-type {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -617,7 +617,6 @@ a:link, a:visited {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%;
   width: 18%;
   background-color: #99e2d0;
   border-radius: 0 20px 20px 0;
