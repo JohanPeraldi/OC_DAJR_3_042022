@@ -110,6 +110,7 @@
 
   &__like {
     @include heart-hover-animation;
+    padding: 0 calc($padding * 1.3);
   }
 }
 
