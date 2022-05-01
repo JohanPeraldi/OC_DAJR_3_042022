@@ -171,20 +171,58 @@
 
 /* TABLETS */
 @media screen and (min-width: 768px) {
-  .menu__course-card {
-    flex: 0 1 48%;
+  .menu {
+    &__title {
+      font-size: 32px;
+    }
 
-    &-wrapper {
-      flex-flow: row wrap;
-      justify-content: space-between;
-      gap: 28px;
+    &__course {
+      &-card {
+        flex: 0 1 48%;
+
+        &-wrapper {
+          flex-flow: row wrap;
+          justify-content: space-between;
+          gap: 28px;
+        }
+      }
+
+      &-title {
+        &-wrapper {
+          right: 93%;
+
+          & > h2 {
+            font-size: 19px;
+          }
+        }
+
+        & h3 {
+          font-size: 19px;
+        }
+      }
+
+      &-description {
+        & span {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
-  .menu__course-card {
-    flex: 1 1 31%;
+  .menu {
+    &__course {
+      &-card {
+        flex: 0 1 31%;
+      }
+
+      &-title {
+        &-wrapper {
+          right: 95%;
+        }
+      }
+    }
   }
 }

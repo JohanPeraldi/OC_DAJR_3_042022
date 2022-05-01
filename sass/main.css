@@ -147,6 +147,12 @@ a:link, a:visited {
 /*************
  MEDIA QUERIES
  */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .link {
+    font-size: 19px;
+  }
+}
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .link {
@@ -793,6 +799,9 @@ a:link, a:visited {
  */
 /* TABLETS */
 @media screen and (min-width: 768px) {
+  .menu__title {
+    font-size: 32px;
+  }
   .menu__course-card {
     flex: 0 1 48%;
   }
@@ -801,11 +810,26 @@ a:link, a:visited {
     justify-content: space-between;
     gap: 28px;
   }
+  .menu__course-title-wrapper {
+    right: 93%;
+  }
+  .menu__course-title-wrapper > h2 {
+    font-size: 19px;
+  }
+  .menu__course-title h3 {
+    font-size: 19px;
+  }
+  .menu__course-description span {
+    font-size: 16px;
+  }
 }
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .menu__course-card {
-    flex: 1 1 31%;
+    flex: 0 1 31%;
+  }
+  .menu__course-title-wrapper {
+    right: 95%;
   }
 }
 

@@ -40,6 +40,13 @@
  MEDIA QUERIES
  */
 
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .link {
+    font-size: 19px;
+  }
+}
+
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .link {
