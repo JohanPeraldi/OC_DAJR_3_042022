@@ -129,6 +129,7 @@
 
       & span {
         font-size: 14px;
+
         &:first-of-type {
           @include text-ellipsis;
         }
@@ -161,5 +162,29 @@
 
   & .link {
     margin: 50px auto 0;
+  }
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .menu__course-card {
+    flex: 0 1 48%;
+
+    &-wrapper {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      gap: 28px;
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .menu__course-card {
+    flex: 1 1 31%;
   }
 }

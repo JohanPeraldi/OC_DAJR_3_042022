@@ -211,6 +211,7 @@ a:link, a:visited {
 .header .image-wrapper {
   width: 100%;
   max-height: 30vh;
+  max-width: 1320px;
 }
 .header .image-wrapper img {
   width: 100%;
@@ -302,6 +303,7 @@ a:link, a:visited {
 .top-bar-wrapper {
   display: flex;
   width: 100%;
+  max-width: 1320px;
   position: relative;
 }
 .top-bar-wrapper .back-home {
@@ -784,6 +786,27 @@ a:link, a:visited {
 }
 .menu .link {
   margin: 50px auto 0;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .menu__course-card {
+    flex: 0 1 48%;
+  }
+  .menu__course-card-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 28px;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .menu__course-card {
+    flex: 1 1 31%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,6 +27,7 @@
 .top-bar-wrapper {
   display: flex;
   width: 100%;
+  max-width: 1320px;
   position: relative;
 
   & .back-home {
