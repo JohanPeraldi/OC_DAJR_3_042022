@@ -62,10 +62,17 @@
  MEDIA QUERIES
  */
 
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  .header img {
+    width: 200px;
+  }
+}
+
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .header img {
-    width: 30%;
+    width: 222px;
   }
 
   .location {
