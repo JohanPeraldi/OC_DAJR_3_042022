@@ -170,7 +170,7 @@
  */
 
 /* TABLETS */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screen-width-tablets) {
   .menu {
     &__title {
       font-size: 32px;
@@ -211,7 +211,7 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-width-desktops) {
   .menu {
     &__course {
       &-card {

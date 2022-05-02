@@ -24,7 +24,7 @@
  */
 
 /* DESKTOP */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-width-desktops) {
   .homepage-section {
     padding-left: calc($padding * 2);
     padding-right: calc($padding * 2);

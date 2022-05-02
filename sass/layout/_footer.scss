@@ -51,7 +51,7 @@
  */
 
 /* TABLETS */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screen-width-tablets) {
   .footer {
     & img {
       width: 122px;
@@ -65,7 +65,7 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-width-desktops) {
   .footer {
     padding: calc($padding * 2);
 

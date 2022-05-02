@@ -13,6 +13,9 @@ BOX-SHADOW
 /**********
  DIMENSIONS
  */
+/**********
+ BREAKPOINTS
+ */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -488,7 +491,6 @@ a:link, a:visited {
   transition: opacity 0.6s;
 }
 .restaurant__like:hover > i.fas.fa-heart {
-  /* Should fill in with linear-gradient */
   opacity: 1;
   transition: opacity 0.6s;
 }
@@ -688,7 +690,6 @@ a:link, a:visited {
   transition: opacity 0.6s;
 }
 .menu__like:hover > i.fas.fa-heart {
-  /* Should fill in with linear-gradient */
   opacity: 1;
   transition: opacity 0.6s;
 }

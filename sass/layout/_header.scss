@@ -63,14 +63,14 @@
  */
 
 /* TABLETS */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screen-width-tablets) {
   .header img {
     width: 200px;
   }
 }
 
 /* DESKTOP */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-width-desktops) {
   .header img {
     width: 222px;
   }
