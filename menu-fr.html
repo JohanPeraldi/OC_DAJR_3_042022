@@ -24,7 +24,14 @@
       </div>
     </div>
     <div class="image-wrapper">
-      <img src="./public/images/restaurants/small/restaurant-a-la-francaise-480w.jpg" alt="Restaurant à la Française, Cité Rouge">
+      <img srcset="./public/images/restaurants/small/restaurant-a-la-francaise-480w.jpg 480w,
+                   ./public/images/restaurants/medium/restaurant-a-la-francaise-800w.jpg 800w,
+                   ./public/images/restaurants/large/restaurant-a-la-francaise-1200w.jpg 1200w"
+           sizes="(max-width: 767px) 480px,
+                  (max-width: 991px) 800px,
+                  1200px"
+           src="./public/images/restaurants/small/restaurant-a-la-francaise-480w.jpg"
+           alt="Restaurant à la Française, Cité Rouge">
     </div>
   </header>
   <main class="menu">

@@ -24,7 +24,14 @@
     </div>
   </div>
   <div class="image-wrapper">
-    <img src="./public/images/restaurants/small/restaurant-la-note-enchantee-480w.jpg" alt="Restaurant La note enchantée, Charonne">
+    <img srcset="./public/images/restaurants/small/restaurant-la-note-enchantee-480w.jpg 480w,
+                 ./public/images/restaurants/medium/restaurant-la-note-enchantee-800w.jpg 800w,
+                 ./public/images/restaurants/large/restaurant-la-note-enchantee-1200w.jpg 1200w"
+         sizes="(max-width: 767px) 480px,
+                (max-width: 991px) 800px,
+                1200px"
+         src="./public/images/restaurants/small/restaurant-la-note-enchantee-480w.jpg"
+         alt="Restaurant La note enchantée, Charonne">
   </div>
 </header>
 <main class="menu">
