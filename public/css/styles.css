@@ -581,6 +581,9 @@ a:link, a:visited {
  */
 /* TABLETS */
 @media screen and (min-width: 768px) {
+  .footer img {
+    width: 122px;
+  }
   .footer ul {
     gap: 0;
     height: 75px;
@@ -592,7 +595,7 @@ a:link, a:visited {
     padding: 40px;
   }
   .footer img {
-    width: 20%;
+    width: 150px;
   }
   .footer ul {
     flex-flow: row nowrap;
