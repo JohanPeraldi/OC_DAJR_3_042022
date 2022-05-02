@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: white;
