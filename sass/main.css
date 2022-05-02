@@ -150,15 +150,14 @@ a:link, a:visited {
 /* TABLETS */
 @media screen and (min-width: 768px) {
   .link {
+    width: 260px;
     font-size: 19px;
   }
 }
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .link {
-    font-size: large;
     font-weight: 400;
-    width: 260px;
   }
 }
 @keyframes spin {
