@@ -398,6 +398,11 @@ a:link, a:visited {
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.18);
   position: relative;
   /* Needed to position span elements with numbers */
+  transition: background-color 0.3s;
+}
+.card--how-it-works:hover {
+  background-color: #f5edff;
+  cursor: pointer;
 }
 .card--how-it-works span {
   position: absolute;
