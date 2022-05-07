@@ -58,6 +58,32 @@ img {
   border-style: none;
 }
 
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+input {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+input {
+  /* 1 */
+  overflow: visible;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -194,12 +220,20 @@ a:link, a:visited {
   width: 100%;
   text-align: center;
 }
+.location i {
+  margin-left: 28px;
+}
 .location .desktop {
   display: none;
 }
-.location span {
+.location__input {
   margin-left: 14px;
   font-weight: 500;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.location__input:focus-visible {
+  outline: 1px solid #9356dc;
 }
 
 .navigation {
@@ -228,6 +262,10 @@ a:link, a:visited {
   .header img {
     width: 200px;
   }
+
+  .location i {
+    margin-left: 10px;
+  }
 }
 /* DESKTOP */
 @media screen and (min-width: 992px) {
@@ -241,7 +279,7 @@ a:link, a:visited {
   .location .desktop {
     display: initial;
   }
-  .location span {
+  .location__input {
     font-size: large;
   }
 

@@ -28,13 +28,23 @@
   width: 100%;
   text-align: center;
 
+  & i {
+    margin-left: 28px;
+  }
+
   & .desktop {
     display: none;
   }
 
-  & span {
+  &__input {
     margin-left: 14px;
     font-weight: 500;
+    background: transparent;
+    border: 1px solid transparent;
+
+    &:focus-visible {
+      outline: 1px solid $color-primary;
+    }
   }
 }
 
@@ -67,6 +77,12 @@
   .header img {
     width: 200px;
   }
+
+  .location {
+    & i {
+      margin-left: 10px;
+    }
+  }
 }
 
 /* DESKTOP */
@@ -84,7 +100,7 @@
       display: initial;
     }
 
-    & span {
+    &__input {
       font-size: large;
     }
   }
