@@ -398,6 +398,9 @@ a:link, a:visited {
   background-color: #f5edff;
   cursor: pointer;
 }
+.card--how-it-works:hover i {
+  color: #9356dc;
+}
 .card--how-it-works span {
   position: absolute;
   left: -14px;
@@ -412,7 +415,7 @@ a:link, a:visited {
 }
 .card--how-it-works i {
   flex: 1 1 25%;
-  color: #9356dc;
+  color: #848482;
 }
 .card--how-it-works p {
   flex: 1 1 75%;

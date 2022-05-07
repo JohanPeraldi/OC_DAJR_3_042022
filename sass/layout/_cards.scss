@@ -49,6 +49,10 @@
     &:hover {
       background-color: #f5edff;
       cursor: pointer;
+
+      & i {
+        color: $color-primary;
+      }
     }
 
     & span {
@@ -64,7 +68,7 @@
 
     & i {
       flex: 1 1 25%;
-      color: $color-primary;
+      color: #848482;
     }
 
     & p {
